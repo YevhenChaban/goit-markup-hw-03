@@ -11,7 +11,7 @@
 
 body {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -44,7 +44,6 @@ img {
 header {
   display: flex;
   align-items: center;
-  /* justify-content:space-between; */
   padding: 24px 215px;
   border-bottom: 1px solid var(--border-color);
 }
@@ -93,8 +92,8 @@ nav .studio {
 
 .navigation-list {
   display: flex;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   align-items: center;
   list-style: none;
 }
@@ -108,8 +107,8 @@ nav .studio {
 .contacts-list {
   display: flex;
   align-items: center;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   list-style: none;
 }
@@ -153,7 +152,7 @@ nav .studio {
 .hero-button {
   margin-top: 30px;
   padding: 10px 32px;
-  border:0px;
+  border: 0px;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
@@ -175,7 +174,7 @@ nav .studio {
 .features-list {
   display: flex;
   justify-content: center;
-  margin:0;
+  margin: 0;
   padding: 94px 215px;
   list-style: none;
 }
@@ -185,21 +184,21 @@ nav .studio {
 }
 
 .feature-item p {
-  width:270px;
+  width: 270px;
 }
 
 .features-title {
-  margin:0px;
+  margin: 0px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
-  color: var(--title-text-color)
+  color: var(--title-text-color);
 }
 
 .section-features p {
-  margin-top:10px;
-  margin-bottom:0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   line-height: 1.7;
 }
 
@@ -210,7 +209,7 @@ nav .studio {
   justify-content: center;
   list-style: none;
   padding: 50px 215px 94px 215px;
-  margin:0;
+  margin: 0;
 }
 
 .job-list .job-item + .job-item {
@@ -218,12 +217,12 @@ nav .studio {
 }
 
 .job-title {
-  margin:0;
+  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  color: var(--title-text-color)
+  color: var(--title-text-color);
 }
 
 /* секція "наша команда" */
@@ -243,19 +242,19 @@ nav .studio {
 }
 
 .team-title {
-  margin:0;
+  margin: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  color:var(--title-text-color)
+  color: var(--title-text-color);
 }
 
 .team-list {
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .team-list h3 {
@@ -296,7 +295,7 @@ footer {
 /* адреса */
 
 .foot-logo {
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -307,7 +306,7 @@ footer {
 
 address {
   margin-left: 0px;
-  margin-top:20px;
+  margin-top: 20px;
 
   font-style: normal;
   line-height: 1.7;
@@ -319,8 +318,8 @@ address .address-item + .address-item {
 
 .address-list {
   list-style: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 address a {
@@ -343,9 +342,10 @@ address a:focus {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 0;
-  padding:0;
+  padding-top: 94px;
+  padding-left: 0px;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .filter-item button {
@@ -360,7 +360,7 @@ address a:focus {
   line-height: 1.6;
   cursor: pointer;
   background-color: #f5f4fa;
-  color: var(--title-text-color)
+  color: var(--title-text-color);
 }
 
 .filters-list .filter-item + .filter-item {
@@ -373,43 +373,40 @@ address a:focus {
   color: var(--white-color);
 }
 
-.conteiner-project {
-  padding:50px 215px 94px 215px;
+/* .conteiner-project {
+  width:1200px;
+  padding:0px 215px 94px 215px;
   margin-right:auto;
   margin-left: auto;
 
-}
+} */
 .projects-list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0px 215px 94px 215px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   list-style: none;
-  gap:30px;  
-
-  
+  gap: 30px;
 }
 
 .project-item {
-    box-sizing:border-box;
-    width: calc((100% - 60px) / 3);
-    border: 1px solid var(--border-color);
-
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .card-content {
+  margin-top: -5px;
   padding: 20px 24px;
+  border: 1px solid var(--border-color);
 }
 
 .project-item a {
   text-decoration: none;
   color: var(--primary-text-color);
-  
 }
 
 .project-item h2 {
-  margin:0px;
+  margin: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -419,8 +416,7 @@ address a:focus {
 
 .project-item p {
   margin-top: 4px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.9;
-  
 }
