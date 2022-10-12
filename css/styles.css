@@ -33,13 +33,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
+} */
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 header {
   display: flex;
@@ -382,7 +382,7 @@ address a:focus {
 } */
 .projects-list {
   margin: 0;
-  padding: 0px 215px 94px 215px;
+  padding: 0px 215px 94px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -395,7 +395,6 @@ address a:focus {
 }
 
 .card-content {
-  margin-top: -5px;
   padding: 20px 24px;
   border: 1px solid var(--border-color);
 }
