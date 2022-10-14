@@ -204,9 +204,9 @@ nav .studio {
   gap:30px;
 }
 
-.feature-item p {
-  width: 270px;
-}
+.feature-item {
+  flex-basis: calc((100% - 90px) /4 );
+} 
 
 .features-title {
   margin: 0px;
@@ -225,9 +225,9 @@ nav .studio {
 
 /* секція "чим ми займаемося" */
 
-.section-job .conteiner {
+/* .section-job .conteiner {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .job-list {
   display: flex;
@@ -242,7 +242,7 @@ nav .studio {
   line-height: 1.2;
   text-align: center;
   color: var(--title-text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 /* секція "наша команда" */
@@ -282,12 +282,19 @@ nav .studio {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-text {
+  padding:30px 15px;
+}
+
 .section-team p {
+  margin:0px;
+  margin-top:10px;
   text-align: center;
   line-height: 1.7;
 }
 
 .section-team h3 {
+  margin:0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -312,7 +319,7 @@ footer .conteiner {
 /* адреса */
 
 .foot-logo {
-  margin-bottom: 11px;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -323,14 +330,15 @@ footer .conteiner {
 
 address {
   font-style: normal;
-  line-height: 1.7;  
+   
 }
 
-.address-item {
+address .address-item + .address-item{
   margin-top:9px;
 }
 
 address a {
+  line-height: 1.7; 
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -390,7 +398,7 @@ address a:focus {
 }
 
 .card-content {
-  padding: 20px 24px;
+  padding: 20px 15px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
